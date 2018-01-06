@@ -1,14 +1,20 @@
 # Universe Accounts UI
 
-A replacement for `accounts-ui` designed to work in [Universe](http://unicms.io) ecosystem: [Modules](https://atmospherejs.com/universe/modules), React and Semantic UI.
+Accounts UI replacement for Universe using React for the CoreUI (https://github.com/matiasmagni/coreui-meteor-react) Bootstrap Admin Template. 
 
 ## Installation
 
-    meteor add universe:accounts-ui
+	In order to install this package you must do it inside a coreui-meteor-react boilerplate (https://github.com/matiasmagni/coreui-meteor-react). If you don't have it already, you must download it first:
+	
+	$ git clone https://github.com/matiasmagni/coreui-meteor-react
+	$ cd coreui-meteor-react
+
+	Then you can add the package inside de project:
+	
+    $ meteor add mmagni:coreui-accounts-ui
 
 - This package assumes that you're using React
-- This package uses Semantic UI styling classes, but you have to add styles on your own, e.g.
-    * `meteor add semantic:ui`
+- This package uses CoreUI styling classes.
 
 - Login options will show based on installed packages and you need to add them manually, e.g.
     * `meteor add accounts-password accounts-facebook ...`
